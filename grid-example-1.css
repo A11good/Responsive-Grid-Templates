@@ -1,0 +1,42 @@
+:root{
+    --Mobile: rgb(90, 139, 172);
+    --Tablet: rgb(82, 161, 79);
+    --Desktop: rgb(161, 89, 79); 
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 5em 20em 14em 2em);
+    grid-template-areas:
+    "header"
+    "main"
+    "article"
+    "footer";
+    grid-gap: .5em;
+    margin: 0 auto 0 auto;
+}
+
+header{
+    grid-area: header;
+    background: var(--Mobile);
+}
+
+main{
+    grid-area: main;
+    background: var(--Mobile);
+}
+
+article{
+    grid-area: article;
+    background: var(--Mobile);
+}
+
+footer{
+    grid-area: footer;
+    background: var(--Mobile);
+}
+
+nav{
+    display: none;
+}
