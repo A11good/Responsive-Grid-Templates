@@ -63,9 +63,9 @@
 @media screen and (min-width: 900px){
     .container{
         display: grid;
-        grid-gap: 1em;
+        grid-gap: .5em;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 5.5em 5.5em 8em 10em;
         grid-template-areas: 
         "sec1 sec1 sec2 sec2 sec2"
         "sec1 sec1 sec3 sec3 sec3"
@@ -74,47 +74,47 @@
     }
 
     .sec1{
-        background: rgb(189, 113, 69);
+        background: red;
         grid-area: sec1;
     }
     
     .sec2{
-        background: rgb(189, 113, 69);
+        background: lightskyblue;
         grid-area: sec2;
     }
     
     .sec3{
-        background: rgb(189, 113, 69);
+        background: lightskyblue;
         grid-area: sec3;
     }
     
     .sec4{
-        background: rgb(189, 113, 69);
+        background: purple;
         grid-area: sec4;
     }
     
     .sec5{
-        background: rgb(189, 113, 69);
+        background: orange;
         grid-area: sec5;
     }
     
     .sec6{
-        background: rgb(189, 113, 69);
+        background: orange;
         grid-area: sec6;
     }
     
     .sec7{
-        background: rgb(189, 113, 69);
+        background: orange;
         grid-area: sec7;
     }
     
     .sec8{
-        background: rgb(189, 113, 69);
+        background: orange;
         grid-area: sec8;
     }
     
     .sec9{
-        background: rgb(189, 113, 69);
+        background: orange;
         grid-area: sec9;
     }
 }
