@@ -1,0 +1,176 @@
+@import "reset.css";
+
+#descriptionBox{
+    text-align: center;
+    height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .9em 1em 0 1em;
+    color: white;
+    background: black;
+    line-height: 1.2em;
+}
+
+sup{
+    font-size: 1em;
+    margin-left: .5em;
+    padding: 0 .5em 0 .5em;
+    background: rgb(105, 105, 105);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    display: grid;
+    grid-template-rows: 8em 14em 15em 6em 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "log-in"
+    "description"
+    "sign-up"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background: white;
+    padding: 1em 0 0 3.5em;
+}
+
+h1{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+p{
+    font-size: .9em;
+}
+
+ul li{
+    display: inline;
+    font-size: .9em;
+    margin: 0 .5em 0 0;
+    line-height: 1.8em;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.signUpButton{
+    border-radius: 4em;
+    border: none;
+    font-size: .9em;
+    padding: .8em 0em .8em 0em;
+    margin: 1.1em 0 0 0;
+    background: rgb(98, 128, 209);
+    text-align: center;
+    width: 27em;
+    color: white;
+    font-weight: 600;
+}
+
+.loginUpButton{
+    border-radius: 4em;
+    border: none;
+    font-size: .9em;
+    padding: .8em 0em .8em 0em;
+    margin: 1.1em 0 0 0;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    width: 27em;
+    color: rgb(98, 128, 209);
+    font-weight: 600;
+    border: .1em solid rgb(98, 128, 209);
+}
+
+.signUpButton2{
+    border-radius: 4em;
+    border: none;
+    font-size: .9em;
+    padding: .8em 0em .8em 0em;
+    background: rgb(98, 128, 209);
+    text-align: center;
+    width: 12em;
+    color: white;
+    font-weight: 600;
+    margin: 0 1em 0 0;
+}
+
+.loginUpButton2{
+    border-radius: 4em;
+    border: none;
+    font-size: .9em;
+    padding: .8em 0em .8em 0em;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    width: 12em;
+    color: rgb(98, 128, 209);
+    font-weight: 600;
+    border: .1em solid rgb(98, 128, 209);
+}
+
+.fa-twitter{
+    margin-bottom: .7em;
+    color: rgb(41, 149, 199);
+}
+
+.log-in{
+    grid-area: log-in;
+    background: white;
+    padding: 4.5em 0 0 3.5em;
+}
+
+.description{
+    grid-area: description;
+    background: rgb(44, 143, 224);
+    padding: 2.5em 0 0 5em;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1920px-Twitter_bird_logo_2012.svg.png);
+    background-repeat: no-repeat;
+    background-size: 400px 344px;
+    background-position: right;
+}
+
+.sign-up{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: sign-up;
+    background: white;
+}
+
+div .sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: footer;
+    background: white;
+    text-align: center;
+    justify-content: center;
+    color: grey;
+    box-sizing: border-box;
+}
+
+.fa-search{
+    margin-bottom: 2em;
+    color: white;
+}
+
+.fa-user{
+    margin-bottom: 2em;
+    color: white;
+}
+
+.fa-comment{
+    margin-bottom: 2em;
+    color: white;
+}
